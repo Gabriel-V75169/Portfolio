@@ -2,7 +2,13 @@ header {
     font-family: Arial;
     margin: 0;
     flex-wrap: wrap;
+    background-color: rgb(40, 94, 209);
   }
+body{
+    margin: 0;
+    padding: 0;
+
+}
 header h1{
     display: inline-block;
 }
@@ -10,7 +16,9 @@ header h1{
     float: right;
     display: flex;
     flex-direction: row;
+    
   }
+
 .main-nav ul{
     list-style: none;
 }
@@ -20,6 +28,10 @@ header h1{
 }
 .nav-item {
     padding-right: 25px;
+    color: black;
+}
+a{
+    color: black;
 }
 .main-container {
     display: flex;
@@ -29,18 +41,37 @@ header h1{
     align-content: stretch;
 }
 .left-container {
+    display: flex;
     flex: 0 0 30%;
+    background-color: rgb(58, 134, 196);
 }
-.right-container {
+.right-container { 
+    display: flex;
     flex: 0 0 70%;
+   
+    background-color: rgb(255, 255, 255);
 }
   
-  section :hover{
+  img:hover{
+    cursor: pointer;
+    background-color: rgb(57, 115, 202);
+    color: black;
 
   }
-  
-  
-  .Secondary-Img{
+  .work{
+
+  }
+  .about-me{
+    display: inline-block;
+  }
+#about-me{
+
+}
+#contact-me{
+
+}
+
+  #Secondary-Img{
 
   }
   .Primary-Img{
@@ -52,6 +83,12 @@ aside {
     display: flex;
     flex-direction: column;
 flex: 30%;
+  }
+section ul{
+    list-style: none;
+}
+  footer{
+    flex: 0 0 70%;
   }
 
   @media screen and (max-width: 992px) {
