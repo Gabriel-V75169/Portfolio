@@ -4,101 +4,112 @@ header {
     flex-wrap: wrap;
     background-color: rgb(40, 94, 209);
   }
-body{
-    margin: 0;
-    padding: 0;
 
-}
+
 header h1{
     display: inline-block;
 }
+
 .main-nav{
     float: right;
     display: flex;
     flex-direction: row;
     
-  }
+}
 
 .main-nav ul{
     list-style: none;
 }
+
+
 .main-nav li{
     display: inline-block;
-    font-size: 20px;
+    font-size: 35px;
 }
+
+
 .nav-item {
     padding-right: 25px;
     color: black;
 }
+
 a{
     color: black;
 }
-.main-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: stretch;
+
+
+body img{
+max-height: 600px;
+max-width: 800px;
+width: 480px;
+height: 480px;
 }
-.left-container {
-    display: flex;
-    flex: 0 0 30%;
-    background-color: rgb(58, 134, 196);
-}
-.right-container { 
-    display: flex;
-    flex: 0 0 70%;
-   
-    background-color: rgb(255, 255, 255);
-}
-  
-  img:hover{
+
+
+img:hover{
     cursor: pointer;
     background-color: rgb(57, 115, 202);
     color: black;
 
   }
-  .work{
 
-  }
-  .about-me{
-    display: inline-block;
-  }
-#about-me{
+
+.top-container, .mid-container, .bottom-container{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+
+.about-me, .contact-me, .work {
+  flex: 0 0 25%;
+background-color:  rgb(44, 147, 216);
+}
+
+.para, .img{
+  flex: 0 0 70%;
+}
+
+
+
+
+  
+#Primary-Img{
+  max-height: 700px;
+  max-width: 1000px;
 
 }
+
+
+
+
+
+ul{
+    list-style: none;
+}
+
+
+@media screen and (max-width: 992px) {
+   
+}
+  
+@media screen and (max-width: 768px) {
+    
+}
+  
+@media screen and (max-width: 576px) {
+    
+}
+  
 #contact-me{
 
 }
+#about-me{
 
-  #Secondary-Img{
-
-  }
-  .Primary-Img{
-
-  }
-aside {
-    font-family: Arial;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-flex: 30%;
-  }
-section ul{
-    list-style: none;
 }
-  footer{
-    flex: 0 0 70%;
-  }
 
-  @media screen and (max-width: 992px) {
-   
-  }
-  
-  @media screen and (max-width: 768px) {
-    
-  }
-  
-  @media screen and (max-width: 576px) {
-    
-  }
+#work{
+
+}
